@@ -1,0 +1,298 @@
+﻿<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Release</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9F34FE4D-88FE-405A-AF89-932829EF4FA7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SSharpSharpSnmpLibLibrary</RootNamespace>
+    <AssemblyName>SSharpSharpSnmpLibLibrary</AssemblyName>
+    <ProjectTypeGuids>{0B4745B0-194B-4BB6-8E21-E9057CA92500};{4D628B5B-2FBC-4AA6-8C16-197242AEB884};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <PlatformFamilyName>WindowsCE</PlatformFamilyName>
+    <PlatformID>E2BECB1F-8C8C-41ba-B736-9BE7D946A398</PlatformID>
+    <OSVersion>5.0</OSVersion>
+    <DeployDirSuffix>SmartDeviceProject1</DeployDirSuffix>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <NativePlatformName>Windows CE</NativePlatformName>
+    <FormFactorID>
+    </FormFactorID>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <AllowedReferenceRelatedFileExtensions>.allowedReferenceRelatedFileExtensions</AllowedReferenceRelatedFileExtensions>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETCF;SSHARP;ASYNC</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <FileAlignment>512</FileAlignment>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <GenerateSerializationAssemblies>off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <AllowedReferenceRelatedFileExtensions>.allowedReferenceRelatedFileExtensions</AllowedReferenceRelatedFileExtensions>
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <FileAlignment>512</FileAlignment>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <GenerateSerializationAssemblies>off</GenerateSerializationAssemblies>
+    <DefineConstants>NETCF;SSHARP;ASYNC</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="mscorlib" />
+    <Reference Include="SimplSharpCustomAttributesInterface, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1099c178b3b54c3b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\ProgramData\Crestron\SDK\SimplSharpCustomAttributesInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="SimplSharpHelperInterface, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1099c178b3b54c3b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\ProgramData\Crestron\SDK\SimplSharpHelperInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="SimplSharpReflectionInterface, Version=1.0.5583.25238, Culture=neutral, PublicKeyToken=1099c178b3b54c3b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\ProgramData\Crestron\SDK\SimplSharpReflectionInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="SSCoreTupleLibrary, Version=1.0.0.18842, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SSCoreTupleLibrary\SSCoreTupleLibrary\bin\Release\SSCoreTupleLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="SSharpCrestronExtensionsLibrary, Version=1.0.0.12810, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SSharpCrestronExtensionsLibrary\SSharpCrestronExtensionsLibrary\bin\Release\SSharpCrestronExtensionsLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="SSharpReflectionExtensionsLibrary, Version=1.0.0.24107, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SSharpReflectionExtensionsLibrary\SSharpReflectionExtensionsLibrary\bin\Release\SSharpReflectionExtensionsLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="SSMonoComponentModelLibrary, Version=1.0.0.17947, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SSMonoComponentModelLibrary\SSMonoComponentModelLibrary\bin\Release\SSMonoComponentModelLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="SSMonoCryptographyLibrary, Version=1.0.0.24877, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SSMonoCryptographyLibrary\SSMonoCryptographyLibrary\bin\Release\SSMonoCryptographyLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="SSMonoNetLibrary, Version=1.0.0.16733, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SSMonoNetLibrary\SSMonoNetLibrary\bin\Release\SSMonoNetLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="SSMonoNetworkInformationLibrary, Version=1.0.0.26568, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SSMonoNetLibrary\SSMonoNetworkInformationLibrary\bin\Release\SSMonoNetworkInformationLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="SSMonoSupportLibrary, Version=1.0.0.21279, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SSMonoSupportLibrary\bin\Release\SSMonoSupportLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="SSMonoThreadPoolLibrary, Version=1.0.0.24837, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SSMonoThreadingLibrary\SSMonoThreadPoolLibrary\bin\Release\SSMonoThreadPoolLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ByteTool.cs" />
+    <Compile Include="Counter32.cs" />
+    <Compile Include="Counter64.cs" />
+    <Compile Include="DataFactory.cs" />
+    <Compile Include="DefinitionType.cs" />
+    <Compile Include="EndOfMibView.cs" />
+    <Compile Include="ErrorCode.cs" />
+    <Compile Include="Gauge32.cs" />
+    <Compile Include="GenericCode.cs" />
+    <Compile Include="GetBulkRequestPdu.cs" />
+    <Compile Include="GetNextRequestPdu.cs" />
+    <Compile Include="GetRequestPdu.cs" />
+    <Compile Include="Header.cs" />
+    <Compile Include="Helper.cs" />
+    <Compile Include="IConstruct.cs" />
+    <Compile Include="IDefinition.cs" />
+    <Compile Include="IEntity.cs" />
+    <Compile Include="IModule.cs" />
+    <Compile Include="InformRequestPdu.cs" />
+    <Compile Include="Integer32.cs" />
+    <Compile Include="IObjectRegistry.cs" />
+    <Compile Include="IObjectTree.cs" />
+    <Compile Include="IP.cs" />
+    <Compile Include="ISegment.cs" />
+    <Compile Include="ISnmpData.cs" />
+    <Compile Include="ISnmpPdu.cs" />
+    <Compile Include="ITypeAssignment.cs" />
+    <Compile Include="Levels.cs" />
+    <Compile Include="MalformedPdu.cs" />
+    <Compile Include="Messaging\AgentFoundEventArgs.cs" />
+    <Compile Include="Messaging\AsyncHelper.cs" />
+    <Compile Include="Messaging\Discoverer.cs" />
+    <Compile Include="Messaging\Discovery.cs" />
+    <Compile Include="Messaging\EndPointExtension.cs" />
+    <Compile Include="Messaging\ErrorException.cs" />
+    <Compile Include="Messaging\ExceptionRaisedEventArgs.cs" />
+    <Compile Include="Messaging\GetBulkRequestMessage.cs" />
+    <Compile Include="Messaging\GetNextRequestMessage.cs" />
+    <Compile Include="Messaging\GetRequestMessage.cs" />
+    <Compile Include="Messaging\IListenerBinding.cs" />
+    <Compile Include="Messaging\InformRequestMessage.cs" />
+    <Compile Include="Messaging\ISnmpMessage.cs" />
+    <Compile Include="Messaging\Listener.cs" />
+    <Compile Include="Messaging\ListenerBinding.cs" />
+    <Compile Include="Messaging\MalformedMessage.cs" />
+    <Compile Include="Messaging\Manager.cs" />
+    <Compile Include="Messaging\MessageFactory.cs" />
+    <Compile Include="Messaging\MessageFactoryException.cs" />
+    <Compile Include="Messaging\MessageReceivedEventArgs.cs" />
+    <Compile Include="Messaging\Messenger.cs" />
+    <Compile Include="Messaging\NumberGenerator.cs" />
+    <Compile Include="Messaging\PortInUseException.cs" />
+    <Compile Include="Messaging\ReportMessage.cs" />
+    <Compile Include="Messaging\ResponseMessage.cs" />
+    <Compile Include="Messaging\SetRequestMessage.cs" />
+    <Compile Include="Messaging\SnmpMessageExtension.cs" />
+    <Compile Include="Messaging\SocketAsyncEventArgsFactory.cs" />
+    <Compile Include="Messaging\SocketAwaitable.cs" />
+    <Compile Include="Messaging\SocketExtension.cs" />
+    <Compile Include="Messaging\TimeoutException.cs" />
+    <Compile Include="Messaging\TrapV1Message.cs" />
+    <Compile Include="Messaging\TrapV2Message.cs" />
+    <Compile Include="Messaging\WalkMode.cs" />
+    <Compile Include="NoSuchInstance.cs" />
+    <Compile Include="NoSuchObject.cs" />
+    <Compile Include="Null.cs" />
+    <Compile Include="ObjectIdentifier.cs" />
+    <Compile Include="ObjectIdentifierConverter.cs" />
+    <Compile Include="Objects\IfAdminStatus.cs" />
+    <Compile Include="Objects\IfDescr.cs" />
+    <Compile Include="Objects\IfIndex.cs" />
+    <Compile Include="Objects\IfInDiscards.cs" />
+    <Compile Include="Objects\IfInErrors.cs" />
+    <Compile Include="Objects\IfInNUcastPkts.cs" />
+    <Compile Include="Objects\IfInOctets.cs" />
+    <Compile Include="Objects\IfInUcastPkts.cs" />
+    <Compile Include="Objects\IfInUnknownProtos.cs" />
+    <Compile Include="Objects\IfLastChange.cs" />
+    <Compile Include="Objects\IfMtu.cs" />
+    <Compile Include="Objects\IfNumber.cs" />
+    <Compile Include="Objects\IfOperStatus.cs" />
+    <Compile Include="Objects\IfOutDiscards.cs" />
+    <Compile Include="Objects\IfOutErrors.cs" />
+    <Compile Include="Objects\IfOutNUcastPkts.cs" />
+    <Compile Include="Objects\IfOutOctets.cs" />
+    <Compile Include="Objects\IfOutQLen.cs" />
+    <Compile Include="Objects\IfOutUcastPkts.cs" />
+    <Compile Include="Objects\IfPhysAddress.cs" />
+    <Compile Include="Objects\IfSpecific.cs" />
+    <Compile Include="Objects\IfSpeed.cs" />
+    <Compile Include="Objects\IfTable.cs" />
+    <Compile Include="Objects\IfType.cs" />
+    <Compile Include="Objects\SysContact.cs" />
+    <Compile Include="Objects\SysDescr.cs" />
+    <Compile Include="Objects\SysLocation.cs" />
+    <Compile Include="Objects\SysName.cs" />
+    <Compile Include="Objects\SysObjectId.cs" />
+    <Compile Include="Objects\SysORDescr.cs" />
+    <Compile Include="Objects\SysORID.cs" />
+    <Compile Include="Objects\SysORIndex.cs" />
+    <Compile Include="Objects\SysORLastChange.cs" />
+    <Compile Include="Objects\SysORTable.cs" />
+    <Compile Include="Objects\SysORUpTime.cs" />
+    <Compile Include="Objects\SysServices.cs" />
+    <Compile Include="Objects\SysUpTime.cs" />
+    <Compile Include="OctetString.cs" />
+    <Compile Include="Opaque.cs" />
+    <Compile Include="OperationException.cs" />
+    <Compile Include="Pipeline\AccessFailureException.cs" />
+    <Compile Include="Pipeline\ComposedMembershipProvider.cs" />
+    <Compile Include="Pipeline\DefaultTypeResolver.cs" />
+    <Compile Include="Pipeline\EngineGroup.cs" />
+    <Compile Include="Pipeline\GetBulkMessageHandler.cs" />
+    <Compile Include="Pipeline\GetMessageHandler.cs" />
+    <Compile Include="Pipeline\GetNextMessageHandler.cs" />
+    <Compile Include="Pipeline\GetNextV1MessageHandler.cs" />
+    <Compile Include="Pipeline\GetV1MessageHandler.cs" />
+    <Compile Include="Pipeline\HandlerMapping.cs" />
+    <Compile Include="Pipeline\IAssemblyLoader.cs" />
+    <Compile Include="Pipeline\ILogger.cs" />
+    <Compile Include="Pipeline\IMembershipProvider.cs" />
+    <Compile Include="Pipeline\IMessageHandler.cs" />
+    <Compile Include="Pipeline\InformRequestMessageHandler.cs" />
+    <Compile Include="Pipeline\InformRequestMessageReceivedEventArgs.cs" />
+    <Compile Include="Pipeline\IScalarObject.cs" />
+    <Compile Include="Pipeline\ISnmpContext.cs" />
+    <Compile Include="Pipeline\ISnmpObject.cs" />
+    <Compile Include="Pipeline\ISnmpObjectBase.cs" />
+    <Compile Include="Pipeline\MessageHandlerFactory.cs" />
+    <Compile Include="Pipeline\NormalSnmpContext.cs" />
+    <Compile Include="Pipeline\NullMessageHandler.cs" />
+    <Compile Include="Pipeline\ObjectStore.cs" />
+    <Compile Include="Pipeline\ScalarObject.cs" />
+    <Compile Include="Pipeline\SecureSnmpContext.cs" />
+    <Compile Include="Pipeline\SetMessageHandler.cs" />
+    <Compile Include="Pipeline\SetV1MessageHandler.cs" />
+    <Compile Include="Pipeline\SnmpApplication.cs" />
+    <Compile Include="Pipeline\SnmpApplicationFactory.cs" />
+    <Compile Include="Pipeline\SnmpContextBase.cs" />
+    <Compile Include="Pipeline\SnmpContextFactory.cs" />
+    <Compile Include="Pipeline\SnmpEngine.cs" />
+    <Compile Include="Pipeline\SnmpObjectBase.cs" />
+    <Compile Include="Pipeline\TableObject.cs" />
+    <Compile Include="Pipeline\TrapV1MessageHandler.cs" />
+    <Compile Include="Pipeline\TrapV1MessageReceivedEventArgs.cs" />
+    <Compile Include="Pipeline\TrapV2MessageHandler.cs" />
+    <Compile Include="Pipeline\TrapV2MessageReceivedEventArgs.cs" />
+    <Compile Include="Pipeline\Version1MembershipProvider.cs" />
+    <Compile Include="Pipeline\Version2MembershipProvider.cs" />
+    <Compile Include="Pipeline\Version3MembershipProvider.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\SharedAssemblyInfo.cs" />
+    <Compile Include="ReportPdu.cs" />
+    <Compile Include="ResponsePdu.cs" />
+    <Compile Include="Scope.cs" />
+    <Compile Include="SearchResult.cs" />
+    <Compile Include="SecurityParameters.cs" />
+    <Compile Include="Security\AESPrivacyProvider.cs" />
+    <Compile Include="Security\AuthenticationProviderExtension.cs" />
+    <Compile Include="Security\Cache.cs" />
+    <Compile Include="Security\CryptoKeyCache.cs" />
+    <Compile Include="Security\DecryptionException.cs" />
+    <Compile Include="Security\DefaultAuthenticationProvider.cs" />
+    <Compile Include="Security\DefaultPrivacyProvider.cs" />
+    <Compile Include="Security\DESPrivacyProvider.cs" />
+    <Compile Include="Security\IAuthenticationProvider.cs" />
+    <Compile Include="Security\IPrivacyProvider.cs" />
+    <Compile Include="Security\MD5AuthenticationProvider.cs" />
+    <Compile Include="Security\PrivacyProviderExtension.cs" />
+    <Compile Include="Security\SaltGenerator.cs" />
+    <Compile Include="Security\SHA1AuthenticationProvider.cs" />
+    <Compile Include="Security\User.cs" />
+    <Compile Include="Security\UserRegistry.cs" />
+    <Compile Include="Sequence.cs" />
+    <Compile Include="SetRequestPdu.cs" />
+    <Compile Include="SnmpDataExtension.cs" />
+    <Compile Include="SnmpException.cs" />
+    <Compile Include="SnmpType.cs" />
+    <Compile Include="StreamExtension.cs" />
+    <Compile Include="TimeTicks.cs" />
+    <Compile Include="TrapV1Pdu.cs" />
+    <Compile Include="TrapV2Pdu.cs" />
+    <Compile Include="Variable.cs" />
+    <Compile Include="VersionCode.cs" />
+    <None Include="Properties\ControlSystem.cfg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CompactFramework.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>rem  S# preparation will execute after these operations</PostBuildEvent>
+  </PropertyGroup>
+</Project>
